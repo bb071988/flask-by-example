@@ -1,0 +1,9 @@
+Commit your changes in git and optionally PUSH to Github, then create two new Heroku apps.
+
+One for production:
+
+$ heroku create wordcounts-pro
+And one for staging:
+
+$ heroku create wordcounts-stage
+Add your new apps to your git remotes. Make sure to name one remote pro (for “production”) and the other stage (for “staging”):
