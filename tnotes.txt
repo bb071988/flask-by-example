@@ -1,3 +1,6 @@
+update the Heroku toolbelt
+wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+
 Commit your changes in git and optionally PUSH to Github, then create two new Heroku apps.
 
 One for production:
@@ -28,4 +31,8 @@ heroku ps:scale web=1 --app bbwordcounts-dev
 heroku command line to see logs
  $ heroku ps:scale web=1 --app bbwordcounts-dev
  
+ stopped here
+ 
+
+ Now we have the same functionality live on our production site.
  
