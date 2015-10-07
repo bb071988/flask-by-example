@@ -9,6 +9,6 @@ def hello():
     return "Hello World!"
 
 if __name__ == '__main__':
-    # app.run()
-    port = int(os.environ.get('PORT', 8080))
-    app.run(host='0.0.0.0', port=port)  
+    app.run()  # uncomment this to run heroku
+    # port = int(os.environ.get('PORT', 8080))  # comment these to run heroku
+    # app.run(host='0.0.0.0', port=port)  
