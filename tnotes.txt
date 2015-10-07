@@ -25,5 +25,7 @@ git push stage master
 must add each app to a dyno as follows
 heroku ps:scale web=1 --app bbwordcounts-dev
 
+heroku command line to see logs
+ $ heroku ps:scale web=1 --app bbwordcounts-dev
  
  
