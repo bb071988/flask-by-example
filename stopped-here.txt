@@ -6,4 +6,24 @@ $ heroku create wordcounts-pro
 And one for staging:
 
 $ heroku create wordcounts-stage
-Add your new apps to your git remotes. Make sure to name one remote pro (for “production”) and the other stage (for “staging”):
+Add your new apps to your it remotes. Make sure to name one remote pro (for “production”) and the other stage (for “staging”):
+
+
+Create the heroku
+
+heroku create wordcounts-pro
+
+Add app as a git remote
+git remote add pro git@heroku.com:YOUR_APP_NAME.git
+
+push to git
+....
+
+push to heroku
+git push stage master
+
+must add each app to a dyno as follows
+heroku ps:scale web=1 --app bbwordcounts-dev
+
+ 
+ 
