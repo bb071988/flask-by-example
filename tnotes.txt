@@ -36,3 +36,16 @@ heroku command line to see logs
 
  Now we have the same functionality live on our production site.
  
+ Generate a good flask secret key
+ >>> import os
+>>> os.urandom(24)
+'\x91\xb4\x8en\x86T-\xea\x9e\xa4|\xbc\xae\x14\x85\x14\x87\x12\xd5\x16\xb2\xc7w\xc4'  #mysecret key
+
+Modify postactivate to add env variables
+
+export APP_SETTINGS="config.DevelopmentConfig"
+
+
+set up env settings on heroku
+heroku config:set APP_SETTINGS=config.StagingConfig --remote stage
+ 
