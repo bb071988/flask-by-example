@@ -48,4 +48,14 @@ export APP_SETTINGS="config.DevelopmentConfig"
 
 set up env settings on heroku
 heroku config:set APP_SETTINGS=config.StagingConfig --remote stage
- 
+
+postactivate location - /home/ubuntu/.virtualenvs/wordcounts/bin/postactivate
+
+STOPPED HERE 
+
+What we’re doing here is creating a table to store the results of our word counts. 
+We first import the database connection that we created in our app.py file as well as JSON from SQLAlchemy’s PostgreSQL dialects. 
+
+
+MUST ADD USER UBUNTU TO THE WORDCOUNT-DEV DB WE CREATED
+ALTER USER ubuntu WITH PASSWORD 'Gatsby';
